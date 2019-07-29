@@ -1,0 +1,23 @@
+<html>
+
+  <head>
+    <title>Modifier un potin</title>
+  </head>
+
+  <body>
+
+    <h1>Modifier le potin n°<%=my_id%> </h1>
+
+    <p>Modifie ton potin à l'aide du formulaire ci-dessous:</p>
+    <form action='/gossips/update/' method='POST'> 
+      Nouveau contenu du potin n°<%=my_id%>: <input type='text' name='gossip_new_content'/><br/>
+      <input type = 'hidden' name = 'id' value = '<%=my_id%>' />
+      <input type='submit'/>
+    </form>
+
+    <p><a href="/">Revenir à la page d'accueil</a>
+    </p>
+
+  </body>
+
+</html>
